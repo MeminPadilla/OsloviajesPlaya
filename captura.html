@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Gratuita - Oslo Viajes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .capture-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://images.unsplash.com/photo-1552074284-5e88ef1aef18?auto=format&fit=crop&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        .gradient-button {
+            background: linear-gradient(45deg, #00a3c4, #38bdf8);
+        }
+    </style>
+</head>
+<body class="capture-bg min-h-screen flex items-center justify-center">
+    <div class="container mx-auto px-4 py-16">
+        <div class="max-w-md mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
+            <div class="p-8">
+                <h1 class="text-3xl font-bold text-gray-900 mb-4">
+                    Los 10 Tesoros de Playa del Carmen
+                </h1>
+                <p class="text-gray-600 mb-6">
+                    Descarga nuestra guía exclusiva y descubre:
+                </p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center text-gray-600">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Las mejores playas secretas
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Cenotes imperdibles
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Guía de restaurantes y vida nocturna
+                    </li>
+                </ul>
+                <form action="/gracias.html" method="POST" class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="name">
+                            Nombre
+                        </label>
+                        <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" 
+                               type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="email">
+                            Email
+                        </label>
+                        <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" 
+                               type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit" 
+                            class="w-full gradient-button text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity">
+                        Descargar Guía Gratuita
+                    </button>
+                </form>
+                <p class="text-xs text-gray-500 text-center mt-4">
+                    Tus datos están seguros con nosotros. No compartimos tu información con terceros.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
